@@ -18,7 +18,7 @@ The basic usage is to to install the NuGet package IKVM.Maven.Sdk to be able to 
 ```
   <ItemGroup>
     <PackageReference Include="IKVM.Maven.Sdk" Version="1.4.1" />
-    <MavenReference Include="net.sf.saxon:Saxon-HE" version="12.1" />
+    <MavenReference Include="net.sf.saxon:Saxon-HE" version="12.2" />
     <!--<MavenReference Include="org.xmlresolver:xmlresolver" Version="4.5.1" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Category="data" Version="4.5.1" />-->
   </ItemGroup>
@@ -29,8 +29,8 @@ This extension project is also on NuGet so you can add it in your project e.g.
 ```
   <ItemGroup>
     <PackageReference Include="IKVM.Maven.Sdk" Version="1.4.1" />
-    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.1.0.0" />
-    <!--<MavenReference Include="net.sf.saxon:Saxon-HE" version="12.1" />
+    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.2.0.0" />
+    <!--<MavenReference Include="net.sf.saxon:Saxon-HE" version="12.2" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Version="4.5.1" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Category="data" Version="4.5.1" />-->
   </ItemGroup>
@@ -43,7 +43,7 @@ using net.sf.saxon.s9api;
 using net.liberty_development.SaxonHE12s9apiExtensions;
 using System.Reflection;
 
-// force loading of updated xmlresolver (hopefully no longer needed with current release Saxon HE 12.1)
+// force loading of updated xmlresolver (hopefully no longer needed with current release Saxon HE 12.2)
 //ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("org.xmlresolver.xmlresolver"));
 //ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("org.xmlresolver.xmlresolver_data"));
 
