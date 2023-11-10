@@ -7,7 +7,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
     <Title>Saxon HE 12 s9api Extension Helpers to use IKVM compiled Saxon HE 12 with .NET 6 or .NET framework 4.8</Title>
-    <Version>12.3.8.7</Version>
+    <Version>12.3.8.8</Version>
     <Authors>Martin Honnen</Authors>
     <Description>This is an extension method library to ease the use of an IKVM compiled version of Saxon HE 12 Java in .NET 6 applications and .NET framework 4.8 applications.</Description>
     <Copyright>Copyright 2023 Martin Honnen</Copyright>
@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="IKVM.Maven.Sdk" Version="1.5.4" />
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.6.1" />
     <MavenReference Include="net.sf.saxon:Saxon-HE" version="12.3" />
   </ItemGroup>
 
