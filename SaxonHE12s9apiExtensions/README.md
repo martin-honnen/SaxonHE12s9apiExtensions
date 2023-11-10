@@ -12,13 +12,13 @@ Understand that this is work in progress and kind of experimental, I don't have 
 
 To use Saxon under .NET, the coding is mainly done against the Java s9api API of Saxon HE 12 although I have provided some extension methods as helpers to ease the task of using .NET FileInfo or Stream instead of needing to know about and use Java specific java.io.File or Stream classes/APIs.
 
-Known issues: I have created the project with VS 2022 Community Edition on Windows, apps built that way could be deployed and run successfully under Linux or Mac where the dotnet .NET 6 runtime is installed; however, the https://github.com/ikvm-revived/ikvm-maven does seem to work on a Mac, so in experiments of your own you will probably be restricted to develop and build on Windows.
+With this new release based on IKVM 8.7.1 and IKVM.Maven.Sdk 1.6.1 both using and building the package on Windows and MacOs should work.
 
 The basic usage is to to install the NuGet package IKVM.Maven.Sdk to be able to pull in the Saxon HE 12 (12.1 and later should Java 8 and therefore IKVM compatible) from Maven:
 ```
   <ItemGroup>
-    <PackageReference Include="IKVM.Maven.Sdk" Version="1.4.1" />
-    <MavenReference Include="net.sf.saxon:Saxon-HE" version="12.2" />
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.6.1" />
+    <MavenReference Include="net.sf.saxon:Saxon-HE" version="12.3" />
     <!--<MavenReference Include="org.xmlresolver:xmlresolver" Version="4.5.1" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Category="data" Version="4.5.1" />-->
   </ItemGroup>
@@ -28,9 +28,9 @@ This extension project is also on NuGet so you can add it in your project e.g.
 
 ```
   <ItemGroup>
-    <PackageReference Include="IKVM.Maven.Sdk" Version="1.4.1" />
-    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.2.0.0" />
-    <!--<MavenReference Include="net.sf.saxon:Saxon-HE" version="12.2" />
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.6.1" />
+    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.3.8.7" />
+    <!--<MavenReference Include="net.sf.saxon:Saxon-HE" version="12.3" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Version="4.5.1" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Category="data" Version="4.5.1" />-->
   </ItemGroup>
@@ -43,7 +43,7 @@ using net.sf.saxon.s9api;
 using net.liberty_development.SaxonHE12s9apiExtensions;
 using System.Reflection;
 
-// force loading of updated xmlresolver (hopefully no longer needed with current release Saxon HE 12.2)
+// force loading of updated xmlresolver (hopefully no longer needed with current release Saxon HE 12.3)
 //ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("org.xmlresolver.xmlresolver"));
 //ikvm.runtime.Startup.addBootClassPathAssembly(Assembly.Load("org.xmlresolver.xmlresolver_data"));
 
