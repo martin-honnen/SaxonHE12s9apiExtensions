@@ -17,7 +17,7 @@ With this new release based on IKVM 8.7.5 and IKVM.Maven.Sdk 1.6.8 both using an
 The basic usage is to to install the NuGet package IKVM.Maven.Sdk to be able to pull in the Saxon HE 12 (12.1 and later should Java 8 and therefore IKVM compatible) from Maven:
 ```
   <ItemGroup>
-    <PackageReference Include="IKVM.Maven.Sdk" Version="1.6.8" />
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.6.9" />
     <MavenReference Include="net.sf.saxon:Saxon-HE" version="12.4" />
     <!--<MavenReference Include="org.xmlresolver:xmlresolver" Version="4.5.1" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Category="data" Version="4.5.1" />-->
@@ -28,8 +28,8 @@ This extension project is also on NuGet so you can add it in your project e.g.
 
 ```
   <ItemGroup>
-    <PackageReference Include="IKVM.Maven.Sdk" Version="1.6.8" />
-    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.4.7.5" />
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.6.9" />
+    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.4.7.6" />
     <!--<MavenReference Include="net.sf.saxon:Saxon-HE" version="12.3" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Version="4.5.1" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Category="data" Version="4.5.1" />-->
