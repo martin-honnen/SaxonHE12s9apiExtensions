@@ -2,7 +2,7 @@
 Extension methods that help/ease the task of using Saxon HE 12 Java s9api from .NET code
 
 This is a sample project outlining my successful attempt to apply https://github.com/ikvm-revived/ikvm and
-https://github.com/ikvm-revived/ikvm-maven to use the open-source Saxon HE 12 Java XSLT 3.0, XQuery 3.1 and XPath 3.1 library in .NET 6 or .NET 8 code or .NET framework 4.8 code.
+https://github.com/ikvm-revived/ikvm-maven to use the open-source Saxon HE 12 Java XSLT 3.0, XQuery 3.1 and XPath 3.1 library in .NET 8 or .NET 9 code or .NET framework 4.8.1 code.
 
 Please understand that this is my own experiment, it uses the official Saxon HE 12 release from Maven, but the integration with IKVM and IKVM Maven is an experimental work of my own, not in any way an officially tested and supported product by Saxonica, the company that has produced Saxon.
 
@@ -29,7 +29,7 @@ This extension project is also on NuGet so you can add it in your project e.g.
 ```
   <ItemGroup>
     <PackageReference Include="IKVM.Maven.Sdk" Version="1.8.2" />
-    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.5.9.4" />
+    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.5.9.6-pre1" />
     <!--<MavenReference Include="net.sf.saxon:Saxon-HE" version="12.3" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Version="4.5.1" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Category="data" Version="4.5.1" />-->
