@@ -9,10 +9,10 @@
     <Title>Saxon HE 12 s9api Extension Helpers to use IKVM compiled Saxon HE 12 with .NET 8 or .NET 9 or .NET framework 4.8.1</Title>
     <Version>12.5.9.6-pre1</Version>
     <Authors>Martin Honnen</Authors>
-    <Description>This is an extension method library to ease the use of an IKVM compiled version of Saxon HE 12 Java in .NET 6 or .NET 8 applications and .NET framework 4.8 applications.</Description>
+    <Description>This is an extension method library to ease the use of an IKVM compiled version of Saxon HE 12 Java in .NET 8 or .NET 9 applications and .NET framework 4.8.1 applications.</Description>
     <Copyright>Copyright 2024 Martin Honnen</Copyright>
     <PackageTags>xslt;XSLT;xpath;XPath;xquery;XQuery;xslt-3.0;XSLT-3.0;xquery-3.1;XQuery-3.1;xpath-3.1;XPath-3.1;json</PackageTags>
-    <PackageReleaseNotes>This is the first preview release of a .NET 8 and .NET 9 and .NET framework 4.8.1 package for Saxon HE 12.5 based on the updated IKVM 8.10.2 and IKVM.Maven.Sdk 1.8.2 (using the latest Java 8 JDK 1.8.422) for better cross-platform support</PackageReleaseNotes>
+    <PackageReleaseNotes>This is the first preview release of a .NET 8 and .NET 9 (RC 1) and .NET framework 4.8.1 package for Saxon HE 12.5 based on the updated IKVM 8.10.2 and IKVM.Maven.Sdk 1.8.2 (using the latest Java 8 JDK 1.8.422) for better cross-platform support</PackageReleaseNotes>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/martin-honnen/SaxonHE12s9apiExtensions</RepositoryUrl>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
