@@ -12,13 +12,13 @@ Understand that this is work in progress and kind of experimental, I don't have 
 
 To use Saxon under .NET, the coding is mainly done against the Java s9api API of Saxon HE 12 although I have provided some extension methods as helpers to ease the task of using .NET FileInfo or Stream instead of needing to know about and use Java specific java.io.File or Stream classes/APIs.
 
-With this new release based on IKVM 8.13.0 and IKVM.Maven.Sdk 1.9.3 IKVM uses an up to date Java 8/1.8 JDK 8u462-b08, as for .NET, both using and building the package on Windows (including Windows ARM) and MacOs should work.
+With this new release based on IKVM 8.13.2 and IKVM.Maven.Sdk 1.9.4 IKVM uses an up to date Java 8/1.8 JDK 8u462-b08, as for .NET, both using and building the package on Windows (including Windows ARM) and MacOs should work.
 
 The basic usage is to to install the NuGet package IKVM.Maven.Sdk to be able to pull in the Saxon HE 12 (12.1 and later should Java 8 and therefore IKVM compatible) from Maven:
 ```
   <ItemGroup>
-    <PackageReference Include="IKVM.Maven.Sdk" Version="1.9.3" />
-    <MavenReference Include="net.sf.saxon:Saxon-HE" version="12.8.0" />
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.9.4" />
+    <MavenReference Include="net.sf.saxon:Saxon-HE" version="12.9.0" />
     <!--<MavenReference Include="org.xmlresolver:xmlresolver" Version="4.5.1" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Category="data" Version="4.5.1" />-->
   </ItemGroup>
@@ -28,8 +28,8 @@ This extension project is also on NuGet so you can add it in your project e.g.
 
 ```
   <ItemGroup>
-    <PackageReference Include="IKVM.Maven.Sdk" Version="1.9.3" />
-    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.8.2" />
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.9.4" />
+    <PackageReference Include="SaxonHE12s9apiExtensions" Version="12.9.0" />
     <!--<MavenReference Include="net.sf.saxon:Saxon-HE" version="12.8" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Version="4.5.1" />
     <MavenReference Include="org.xmlresolver:xmlresolver" Category="data" Version="4.5.1" />-->
